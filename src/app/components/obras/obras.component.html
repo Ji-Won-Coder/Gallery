@@ -4,24 +4,24 @@
 
 <div class="card-columnas">
     <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col"*ngFor="let color of arte">
+        <div class="col animated fadeInt fast "*ngFor="let color of arte; let i = index ">
           <div class="card"   >
             <img [src]="color.img" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">{{ color.nombre }}</h5>
               <p class="card-text">{{ color.bio }}</p>
+              <p class="card-text"> <small class="text-muted">{{color.aparicion}}</small></p>
             </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
-
-             
-             
-
-            </div>
-            <button type="button" class="btn btn-outline-primary btn-block" > 
+              
+              <button (click)="verObra(i)"  
+                type="button" class="btn btn-outline-primary btn-block" > 
                 Ver mas...
-              </button>
+              </button> 
+
+              <!--<a [routerLink]="['/obra',i]" class="btn btn-outline-primary">Ver mas..</a>--> 
+
           </div>
         </div>
-
+ 
+      </div>
 </div>
