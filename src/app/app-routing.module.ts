@@ -6,7 +6,7 @@ import{ AboutComponent } from './components/about/about.component';
 import{ ObrasComponent } from './components/obras/obras.component';
 import{ ObraComponent } from './components/obra/obra.component';
 import{ BuscarComponent } from './components/buscar/buscar.component';
-
+//hola
 const routes: Routes = [
     {path:'home',component:HomeComponent}, //CADA RUTA TIENE UN PATH Y UN COMPONENT
     {path:'about',component:AboutComponent},
