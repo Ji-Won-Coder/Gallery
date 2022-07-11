@@ -26,7 +26,8 @@ export class ObrasComponent implements OnInit {
   }
 
   verObra( idx : number){
-    this.router.navigate(['/heroe',idx]);
+    //console.log(idx)
+    this.router.navigate(['obra/',idx]);
     //console.log(inx);
   }
 

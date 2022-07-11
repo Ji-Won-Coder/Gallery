@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 //rutas
-import { APP_ROUTING } from './app.routes';
+//import { APP_ROUTING } from './app.routes';
 
 //servicios
 import { ObrasService } from "./components/servicios/obras.service";
@@ -17,6 +17,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ObrasComponent } from './components/obras/obras.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ObraComponent } from './components/obra/obra.component';
+import { BuscarComponent } from './components/buscar/buscar.component';
 
 
 @NgModule({
@@ -28,12 +29,13 @@ import { ObraComponent } from './components/obra/obra.component';
     ObrasComponent,
     FooterComponent,
     ObraComponent,
+    BuscarComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    APP_ROUTING 
+    //APP_ROUTING 
   ],
   providers: [   //AQUI VAN LOS SERVICIOS
     ObrasService

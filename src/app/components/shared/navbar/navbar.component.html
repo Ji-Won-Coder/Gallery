@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-dark">
+<nav class="navbar navbar-expand-lg color"> <!--style="color:#8359FF -->
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><a class="navbar-brand" href="#">
         <img src="assets\img\bellas_artes.png" alt="" width="60xp" height="10%">
@@ -11,14 +11,14 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
            <!--ACTIVE-->
-          <li class="nav-item" routerLinkActive="" >
-            <a class="nav-link" [routerLink]="['home']">Home</a>
+          <li class="nav-item letra" routerLinkActive="" >
+            <a class="nav-link" [routerLink]="['home']"> Inicio</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item letra">
             <a class="nav-link" [routerLink]="['obras']">Obras</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]="['about']">About</a>
+          <li class="nav-item letra">
+            <a class="nav-link" [routerLink]="['about']">Buscar</a>
 
 
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -32,8 +32,9 @@
 
 
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-primary" type="submit">Search</button>
+          <input class="form-control me-2" type="search" placeholder="Buscar Obras" (keyup.intro)="buscarObra(buscarTexto.value)" #buscarTexto>
+          <button (click)="buscarObra(buscarTexto.value)"
+          class="btn btn-outline-primary" type="button">Buscar</button>
          </form>
 
 

@@ -1,0 +1,31 @@
+<h1>Buscando: {{termino}}</h1>
+<hr>
+<div *ngFor="let data of obras; let i = index " class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+
+      <div class="col-md-4  animated fadeInt fast">
+        <img [src]="data.img" class="img-fluid rounded-start" alt="..." >
+      </div>
+
+      <div class="col-md-8">
+
+              <div class="card-body">
+
+                <div><h5 class="card-title">{{ data.nombre }}</h5></div>
+                <div><p class="card-text">{{ data.bio }}</p></div>
+                <p class="card-text"><small class="text-muted">{{data.aparicion}}</small></p>
+                <p class="card-text"> <small class="text-muted">{{ data.tipo }} </small></p>
+
+              </div>
+
+              <button (click)="verObra(i)"  
+                      type="button" class="btn btn-outline-primary btn-block" > 
+                      Ver mas...
+              </button> 
+
+        <!--<a [routerLink]="['/obra',i]" class="btn btn-outline-primary">Ver mas..</a>--> 
+
+      </div>
+
+    </div>
+</div>
