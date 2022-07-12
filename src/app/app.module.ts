@@ -18,6 +18,7 @@ import { ObrasComponent } from './components/obras/obras.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ObraComponent } from './components/obra/obra.component';
 import { BuscarComponent } from './components/buscar/buscar.component';
+import { ObraTarjetaComponent } from './components/obra-tarjeta/obra-tarjeta.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { BuscarComponent } from './components/buscar/buscar.component';
     ObrasComponent,
     FooterComponent,
     ObraComponent,
-    BuscarComponent
+    BuscarComponent,
+    ObraTarjetaComponent
 
   ],
   imports: [
