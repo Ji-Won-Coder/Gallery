@@ -7,6 +7,7 @@ export interface Obras{
       aparicion:string;
       casa:string;      
       tipo:string;
+      idx?: any;
 }
 
 @Injectable()//decorador
@@ -99,10 +100,13 @@ export class ObrasService{
       let obrasArr:Obras[] = [];
       termino= termino.toLowerCase();
 
-      for (let obras of this.obras){
+      for (let i=0; i < this.obras.length; i ++ ){
+
+        let obras= this.obras[i];
+
         let nombre= obras.nombre.toLowerCase();
         if (nombre.indexOf(termino) >= 0 ){
-
+          obras.idx = i;
           obrasArr.push(obras)
         }
       }
