@@ -32,9 +32,8 @@
 
 
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Buscar Obras" (keyup.intro)="buscarObra(buscarTexto.value)" #buscarTexto>
-          <button (click)="buscarObra(buscarTexto.value)"
-          class="btn btn-outline-primary" type="button">Buscar</button>
+          <input class="form-control me-2" type="search" placeholder="Buscar Obras" (keyup)="buscarObra(buscarTexto.value)" #buscarTexto>
+          <button (click)="buscarObra(buscarTexto.value)" class="btn btn-outline-primary" type="button"> Buscar </button>
          </form>
 
 

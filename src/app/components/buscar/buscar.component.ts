@@ -12,7 +12,7 @@ import { ObrasService } from '../servicios/obras.service';
 
 export class BuscarComponent implements OnInit {
 
-  public obras:any[] =[]//variable local
+  obras:any[] =[]//variable local
   termino!: string;
   
 
@@ -30,8 +30,6 @@ export class BuscarComponent implements OnInit {
     });
   }
 
-  verObra(id:any){
-    console.log(id)
-  }
+  
 
 }

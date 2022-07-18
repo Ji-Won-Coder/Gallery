@@ -2,15 +2,15 @@
 <hr>
 
 <div class="row animated fadeInt fast" *ngIf="obras.length == 0">
-  <div class="col-md-15">
-    <div class="alert alert-info" role="alert">
-      No se encontraron resultados de: {{termino}}
+  <div class="col-md-12">
+    <div class="alert alert-info" role="alert" >
+      No se encontraron los resultados de la busqueda: {{termino}}
     </div>
   </div>
-
+  <div *ngFor="let color of obras; let verObras = index">
+    <app-obra-tarjeta [obras]="color" [fuera]="verObras" ></app-obra-tarjeta>
+  </div>
 </div>
-<div class="card-columnas" >
 
-  <app-obra-tarjeta [obras]="color" [fuera]="verObras" *ngFor="let color of termino; let verObras = index" ></app-obra-tarjeta>
+  
 
-</div>

@@ -64,7 +64,7 @@ export class ObrasService{
       tipo:"Fanart"
     },
     {
-      nombre: "MakiMA",
+      nombre: "Makima",
       bio: "Personaje de la obra Chainsaw Man.La historia se desarrolla en un mundo donde los demonios nacen de los miedos humanos. Los demonios suelen ser peligrosos y malévolos, su poder es proporcional a la fuerza con que se incita su miedo correspondiente en la conciencia humana colectiva.",
       img: "assets/img/makima.png",
       aparicion: "2021",

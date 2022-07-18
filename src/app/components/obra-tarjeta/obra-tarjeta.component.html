@@ -1,24 +1,18 @@
+<div class="col animated fadeInt fast">
+  <img [src]="obras.img" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{ obras.nombre }}</h5>
+    <p class="card-text">{{ obras.bio }}</p>
+    <p class="card-text"> <small class="text-muted">{{obras.aparicion}}</small></p>
+    <p class="card-text"> <small class="text-muted">{{ obras.tipo }} </small></p>
+  </div>
+  
+  <button (click)="verObras()"  
+    type="button" class="btn btn-outline-primary btn-block" > 
+    Ver mas...
+  </button> 
 
-
-     <div class="col animated fadeInt fast">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="card">
-    
-            <img [src]="obras.img" class="card-img-top" alt="...">
-
-            <div class="card-body">
-            <h5 class="card-title">{{ obras.nombre }}</h5>
-            <p class="card-text">{{ obras.bio }}</p>
-            <p class="card-text"> <small class="text-muted">{{obras.aparicion}}</small></p>
-            <p class="card-text"> <small class="text-muted">{{ obras.tipo }} </small></p>
-            </div>
-        
-            <button (click)="verObras()"  
-                type="button" class="btn btn-outline-primary btn-block" > 
-                Ver mas...
-            </button>
-
-        </div>
-        </div>
-    </div>
-      <!--<a [routerLink]="['/obra',i]" class="btn btn-outline-primary">Ver mas..</a>--> 
+ <!--<a [routerLink]="['/obra',i]" class="btn btn-outline-primary">Ver mas..</a>--> 
+ 
+</div>
+   
