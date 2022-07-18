@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 body{
   padding-bottom: 50px;
@@ -66,5 +69,6 @@ footer{
   .fadeIn {
     animation-name: fadeIn;
   }
+  
   
   
