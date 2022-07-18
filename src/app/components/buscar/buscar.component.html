@@ -1,8 +1,8 @@
 <h1>Buscando: {{termino}}</h1>
 <hr>
 
-<div class="row animated fadeInt fast" *ngIf="obras.length == 0">
-  <div class="col-md-12">
+<div class="row animated fadeInt fast" >
+  <div class="col-md-12" *ngIf="obras.length == 0">
     <div class="alert alert-info" role="alert" >
       No se encontraron los resultados de la busqueda: {{termino}}
     </div>
