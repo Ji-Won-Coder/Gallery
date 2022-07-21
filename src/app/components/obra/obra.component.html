@@ -1,30 +1,29 @@
 
-<h6>{{obra.nombre}} <small>{{obra.aparicion}}</small> </h6>
+<h6>{{obra.nombre | uppercase}} <small>{{obra.aparicion | date:'y'}}</small> </h6>
 <hr>
 
-<div class="row animated fadeIn fast card-columns">
+<div class="row animated fadeIn fast ">
+ 
+     <div class="col-md-4">
 
-    <div class="col-md-4">
+         <img [src]="obra.img" class="img-fluid" [alt]="obra.nombre">
+         <br><br>
+         <a [routerLink]="['/obras']" class="btn btn-outline-danger btn-block">Anterior</a>
 
-        <img [src]="obra.img" class="img-fluid" [alt]="obra.nombre">
-        <br><br>
-        <a [routerLink]="['/obras']" class="btn btn-outline-danger btn-block">Anterior</a>
-    </div>
+     </div>
 
-    <div class="col-md-8">
-
-        <h4>{{obra.nombre}}</h4>
-        <hr>
-        <p>
-            {{obra.bio}}
-        </p>
-        
-        <div>
-        
-            <img *ngIf="obra.tipo == 'Realista'" clas="imglogo" src="assets/img/oleo02.png" alt="Realista" hspace="25"> 
-            <img *ngIf="obra.tipo ==  'Fanart'" clas="imglogo" src="assets/img/negrilla.png" alt="Fanart">
-        
-        </div>
-    
-    </div>
+     <div class="col-md-8">
+         <h3>{{obra.nombre}}</h3>
+         <hr>
+         <p>
+             {{obra.bio}}
+         </p>
+         <div>
+            
+             <img *ngIf="obra.tipo == 'Realista'" clas="imglogo" src="assets/img/oleo02.png" alt="Realista" hspace="25"> 
+             <img *ngIf="obra.tipo ==  'Fanart'" clas="imglogo" src="assets/img/negrilla.png" alt="Fanart" hspace="25">
+            
+         </div>
+     </div>
+ 
 </div>
