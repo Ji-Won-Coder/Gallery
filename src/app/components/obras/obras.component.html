@@ -9,11 +9,10 @@
 <small class="display-7 fw-bold">Lienzo Artistico</small>
 </div>
 <hr>
-<div class="columns-3" >
+<div class="grid grid-cols-6 gap-2" >
 
-  <app-obra-tarjeta [obras]="color" [fuera]="verObras" *ngFor="let color of arte; let verObras = index" ></app-obra-tarjeta>
-  <svg class="stroke-cyan-500 ...">
-    <!-- ... -->
-  </svg>
+  
+    <app-obra-tarjeta class="col-span-6 sm:col-span-3 md:col-span-2" [obras]="color" [fuera]="verObras" *ngFor="let color of arte; let verObras = index" ></app-obra-tarjeta>
+ 
+ 
 </div>
-x
