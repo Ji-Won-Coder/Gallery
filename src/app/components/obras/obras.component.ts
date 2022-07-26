@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-obras',
-  templateUrl: './obras.component.html',
+  templateUrl: './obras.component.html'
   
 })
 export class ObrasComponent implements OnInit {
