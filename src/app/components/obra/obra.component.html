@@ -1,7 +1,12 @@
 
 <h6>{{obra.nombre | uppercase}} <small>{{obra.aparicion | date:'y'}}</small> </h6>
 <hr>
+<div class="container">
+ <div class="row d-flex justify-center ">
+ 
+     <div class="col-md-4 ">
 
+<<<<<<< HEAD
 <div class="row animated fadeIn fast ">
  
      <div class="col-md-4">
@@ -21,8 +26,35 @@
              <img *ngIf="obra.tipo ==  'Fanart'" clas="imglogo" src="assets/img/negrilla.png" alt="Fanart" hspace="25">
             
          </div>
+=======
+        <div align="center">
+            
+            <img  [src]="obra.img"  [alt]="obra.nombre">
+
+        </div>
+         <br><br>
+        
+         <h3>{{obra.nombre}}</h3>
+         <hr>
+         <p align="justify">
+             {{obra.bio}}
+         </p>
+        
+            
+        <img *ngIf="obra.tipo == 'Realista'" clas="imglogo" src="assets/img/oleo02.png" alt="Realista" > 
+        <img *ngIf="obra.tipo ==  'Fanart'" clas="imglogo" src="assets/img/negrilla.png" alt="Fanart" >
+        
+        <br>
+         
+        <a [routerLink]="['/obras']" class="btn btn-outline-danger btn-block" >Anterior</a>
+
+>>>>>>> Develop
 
      </div>
 
    
+<<<<<<< HEAD
+=======
+ </div>
+>>>>>>> Develop
 </div>
