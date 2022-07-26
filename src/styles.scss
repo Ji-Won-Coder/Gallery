@@ -5,14 +5,22 @@
 
 body{
   padding-bottom: 50px;
+  background:rgb(0, 145, 255),rgb(0, 170, 255);
+  height: 100fr;
   
 }
+
 
 footer{
     color: black;
     position: fixed;
     bottom: 0px;
     width: 100%;
+}
+.display-3{
+  text-align: center;
+  text-transform:unset;
+  
 }
 
 
@@ -28,7 +36,8 @@ footer{
 }
 
 .imglogo{
-    width:120xp;
+    width:200px;
+    initial: letter align 10px;;
 }
 
 .color{
@@ -47,11 +56,15 @@ footer{
   outline: 2px solid black;
   outline-offset: auto;
 }
+.animate-pulse{
+  text-align: justify;
+  text-justify: auto;
+}
+.text-blue-600{
+  text-decoration: solid;
+  text-align: center;
+}
 
-.imglogo{
-  max-width: 600px;
-  border-image: round;
- }
 
 
 /*animaciones*/

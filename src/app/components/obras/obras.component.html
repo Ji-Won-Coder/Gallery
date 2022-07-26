@@ -1,18 +1,19 @@
  
-<div class="h-14 bg-gradient-to-r from-cyan-500 to-blue-500">
-  <div class="bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-violet-500">
-    <h1 class="display-6 fw-bold">Obras</h1>
-</div>
-</div>
 
-<div class="h-14 bg-gradient-to-r from-cyan-500 to-blue-500">
+  <div class="h-14 bg-gradient-to-r from-cyan-500 to-blue-500">
+    <div class="bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-violet-500">
+      <h1 class="display-6 fw-bold">Obras</h1>
+  </div>
+  </div>
+
+  <div class="h-14 bg-gradient-to-r from-cyan-500 to-blue-500">
 <small class="display-7 fw-bold">Lienzo Artistico</small>
-</div>
-<hr>
-<div class="grid grid-cols-6 gap-2" >
+  </div>
+  <hr>
+  <div class="grid grid-cols-6 gap-2" >
 
   
     <app-obra-tarjeta class="col-span-6 sm:col-span-3 md:col-span-2" [obras]="color" [fuera]="verObras" *ngFor="let color of arte; let verObras = index" ></app-obra-tarjeta>
  
  
-</div>
+  </div>

@@ -1,28 +1,35 @@
 
 <h6>{{obra.nombre | uppercase}} <small>{{obra.aparicion | date:'y'}}</small> </h6>
 <hr>
-
-<div class="row animated fadeIn fast ">
+<div class="container">
+ <div class="row d-flex justify-center ">
  
-     <div class="col-md-4">
+     <div class="col-md-4 ">
 
-         <img [src]="obra.img" class="img-fluid" [alt]="obra.nombre">
+        <div align="center">
+            
+            <img  [src]="obra.img"  [alt]="obra.nombre">
+
+        </div>
          <br><br>
-         <a [routerLink]="['/obras']" class="btn btn-outline-danger btn-block">Anterior</a>
-
+        
          <h3>{{obra.nombre}}</h3>
          <hr>
-         <p>
+         <p align="justify">
              {{obra.bio}}
          </p>
-         <div>
+        
             
-             <img *ngIf="obra.tipo == 'Realista'" clas="imglogo" src="assets/img/oleo02.png" alt="Realista" hspace="25"> 
-             <img *ngIf="obra.tipo ==  'Fanart'" clas="imglogo" src="assets/img/negrilla.png" alt="Fanart" hspace="25">
-            
-         </div>
+        <img *ngIf="obra.tipo == 'Realista'" clas="imglogo" src="assets/img/oleo02.png" alt="Realista" > 
+        <img *ngIf="obra.tipo ==  'Fanart'" clas="imglogo" src="assets/img/negrilla.png" alt="Fanart" >
+        
+        <br>
+         
+        <a [routerLink]="['/obras']" class="btn btn-outline-danger btn-block" >Anterior</a>
+
 
      </div>
 
    
+ </div>
 </div>
