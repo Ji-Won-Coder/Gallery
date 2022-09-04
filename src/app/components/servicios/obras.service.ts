@@ -20,7 +20,7 @@ export class ObrasService{
       nombre: "la noche estrellada",
       bio: "La noche estrellada es un óleo sobre lienzo del pintor postimpresionista neerlandés Vincent van Gogh. Pintado en junio de 1889, representa la vista desde la ventana orientada al este de su habitación de asilo en Saint-Rémy-de-Provence, justo antes del amanecer, con la adición de un pueblo imaginario.​​​",
       img: "assets/img/la noche estrellada.png",
-      aparicion: "junio de 1889–junio de 1889",
+      aparicion: "1889",
       autor:"Vincent van Gogh",
       tipo:"Realista"
     },
@@ -36,7 +36,7 @@ export class ObrasService{
       nombre: "Guernica",
       bio: "Guernica es un cuadro de Pablo Picasso, pintado en París ​ entre los meses de mayo y junio de 1937, cuyo título alude al bombardeo de Guernica, ocurrido el 26 de abril de dicho año, durante la guerra civil española.el cuadro que expresa el rechazo y desolacion de aquella guerra",
       img: "assets/img/Guernica.png",
-      aparicion: "26 de abril de 1937–junio de 1937",
+      aparicion: " 1937",
       autor: "Pablo Picasso",
       tipo:"Realista"
     },

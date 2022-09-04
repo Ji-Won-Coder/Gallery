@@ -5,8 +5,11 @@
 
 body{
   padding-bottom: 50px;
+  background:rgb(0, 145, 255),rgb(0, 170, 255);
+  height: 100fr;
   
 }
+
 
 footer{
     color: black;
@@ -14,9 +17,12 @@ footer{
     bottom: 0px;
     width: 100%;
 }
-.main container{
-   margin-top: 20px; 
+.display-3{
+  text-align: center;
+  text-transform:unset;
+  
 }
+
 
 .obras2{
     font-family: 'Times New Roman', Times, serif;
@@ -25,29 +31,40 @@ footer{
 
 .obras{
     font-style: italic;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   text-align: center;
+   text-justify: auto;
 }
 
 .imglogo{
-    width:120xp;
+    width:200px;
+    initial: letter align 10px;;
 }
 
 .color{
-  background-color:#87CEFA;
+  background-color:#000000;
 }
 .letra{
   text-decoration-line: underline;
 }
 
-.modelo{
-  border-image:none;
+.boton{
+  display: inline-block;
+  padding: 1em 1em;
+  color: rgb(7, 6, 6);
+  border-radius: 1em;
+  border:auto;
+  outline: 2px solid black;
+  outline-offset: auto;
+}
+.animate-pulse{
+  text-align: justify;
+  text-justify: auto;
+}
+.text-blue-600{
+  text-decoration: solid;
+  text-align: center;
+}
 
- }
-
- .imglogo{
-  max-width: 100%;
-  border-image: round;
- }
 
 
 /*animaciones*/
@@ -80,4 +97,4 @@ footer{
   }
   
   
-  
+ 
