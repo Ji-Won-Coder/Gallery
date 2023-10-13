@@ -4,6 +4,7 @@ import{ AboutComponent } from './components/about/about.component';
 import{ ObrasComponent } from './components/obras/obras.component';
 import{ ObraComponent } from './components/obra/obra.component';
 import { LoginComponent } from "./components/login/login.component";
+import { MisnotasComponent } from "./components/misnotas/misnotas.component";
 
 const APP_ROUTES:Routes=[ //ARREGLO DE RUTAS
     {path:'home',component:HomeComponent}, //CADA RUTA TIENE UN PATH Y UN COMPONENT
@@ -11,8 +12,8 @@ const APP_ROUTES:Routes=[ //ARREGLO DE RUTAS
     {path:'obras',component:ObrasComponent},
     {path:'obra/:id',component:ObraComponent},
     {path:'login',component:LoginComponent},
-    {path:'**', pathMatch:'full',redirectTo:'home'} //SI NO SE ENCUENTRA LA RUTA DE ARRIBA SE VA A EJECUTAR, ESTA LINEA
-  
+    {path:'**', pathMatch:'full',redirectTo:'home'}, //SI NO SE ENCUENTRA LA RUTA DE ARRIBA SE VA A EJECUTAR, ESTA LINEA
+    {path:'misnotas',component:MisnotasComponent}
 ];
 export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES);
 

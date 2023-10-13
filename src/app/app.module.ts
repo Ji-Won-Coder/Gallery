@@ -20,6 +20,7 @@ import { ObraComponent } from './components/obra/obra.component';
 import { BuscarComponent } from './components/buscar/buscar.component';
 import { ObraTarjetaComponent } from './components/obra-tarjeta/obra-tarjeta.component';
 import { LoginComponent } from './components/login/login.component';
+import { MisnotasComponent } from './components/misnotas/misnotas.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { LoginComponent } from './components/login/login.component';
     ObraComponent,
     BuscarComponent,
     ObraTarjetaComponent,
-    LoginComponent
+    LoginComponent,
+    MisnotasComponent
 
   ],
   imports: [
